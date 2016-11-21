@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Test Posts 1"
+title:        "poof"
 date:         2016-04-10 18:24:44 +0200
 author:       "Author"
 categories:   jekyll update
