@@ -14,12 +14,19 @@ permalink: /categories/
     <div id="#{{ category_name | slugize }}"></div>
     <p></p>
     
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
+      <article class="style1">
+        <span class="image">
+          <img src="{{ post.list-image | prepend: site.baseurl }}" alt="">
+        </span>
+        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+          <h2>{{ post.title }}</h2>
+          <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+          <div class="content">
+            <p>{{ post.description }}</p>
+          </div>
+        </a>
+      </article>
     {% endfor %}
   </div>
 {% endfor %}
