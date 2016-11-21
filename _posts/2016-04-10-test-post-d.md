@@ -3,7 +3,7 @@ layout:       post
 title:        "Test Posts 4"
 date:         2016-04-10 18:27:44 +0200
 author:       "Author"
-categories:   jekyll update
+categories:   foop
 tags:         tag1 tag2
 
 # POSTS LIST
