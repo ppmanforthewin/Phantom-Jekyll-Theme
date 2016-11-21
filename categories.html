@@ -14,8 +14,10 @@ permalink: /categories/
     <div id="#{{ category_name | slugize }}"></div>
     <p></p>
     
-    {% for post in site.categories[category_name] %}
-      <article class="style1">
+    <section class="tiles">
+
+  {% for post in site.categories[category_name] %}
+      <article class="{{ post.class }}">
         <span class="image">
           <img src="{{ post.list-image | prepend: site.baseurl }}" alt="">
         </span>
@@ -28,6 +30,8 @@ permalink: /categories/
         </a>
       </article>
     {% endfor %}
+
+</section>
   </div>
 {% endfor %}
 </div>
