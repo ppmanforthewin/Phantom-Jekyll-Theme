@@ -8,8 +8,8 @@ description: >
 permalink: /categories/
 ---
   <h2> Foop </h2>
-   {% for post in site.categories.foop %}
-    <section class=tiles>
+   <section class=tiles>
+    {% for post in site.categories.foop %}
       <article class="style1">
         <span class="image">
           <img src="{{ post.list-image | prepend: site.baseurl }}" alt="">
@@ -22,13 +22,13 @@ permalink: /categories/
           </div>
         </a>
       </article>
-    </section>
-   {% endfor %}
+    {% endfor %}
+   </section>
     
   <h2> Poof </h2>
-   {% for post in site.categories.poof %}
-    <section class=tiles>
-      <article class="style2">
+   <section class=tiles>
+    {% for post in site.categories.poof %}
+      <article class="style1">
         <span class="image">
           <img src="{{ post.list-image | prepend: site.baseurl }}" alt="">
         </span>
@@ -40,5 +40,5 @@ permalink: /categories/
           </div>
         </a>
       </article>
-    </section>
-   {% endfor %}
+    {% endfor %}
+   </section>
