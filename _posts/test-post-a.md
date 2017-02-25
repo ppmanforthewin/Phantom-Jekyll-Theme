@@ -1,7 +1,6 @@
 ---
 layout:       post
 title:        "Test Post 1"
-date:         2016-04-10 18:24:44 +0200
 author:       "Author"
 categories:   poof
 tags:         tag1 tag2
