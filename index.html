@@ -12,7 +12,7 @@ description: >
 </header>
 <section class="tiles">
 
-  {% for post in site.posts %}
+  {% for post in site.posts reversed %}
       <article class="{{ post.class }}">
         <span class="image">
           <img src="{{ post.list-image | prepend: site.baseurl }}" alt="">
