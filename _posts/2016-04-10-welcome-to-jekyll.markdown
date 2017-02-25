@@ -8,7 +8,7 @@ tags:         tag1 tag2
 
 # POSTS LIST
 class:       "style1"                               # config bg-color to post list card (1..6)
-list-image:  "/assets/images/pic01.jpg"             # config image to post list card (1..6)
+list-image:  "/assets/images/Kip-Luscian-Canvas.jpg"             # config image to post list card (1..6)
 description: >                                      # config description to post list card
   Sed nisl arcu euismod sit amet nisi
   lorem etiam dolor veroeros et feugiat.
